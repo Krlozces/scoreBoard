@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BasketBall Scoreboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <main>
+            <h1>BASKETBALL SCOREBOARD</h1>
+            <div class="main-container">
+                <div class="sub-container" id="home-container">
+                    <h2>HOME</h2>
+                    <div class="counter" id="counter-div">
+                        <p id="home-counter"></p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" onclick="add1()" >+1</button>
+                        <button class="btn" onclick="add2()">+2</button>
+                        <button class="btn" onclick="add3()">+3</button>
+                    </div>
+                    <p id="answer" style="font-size: 18px;"></p>
+                </div>
+                <div id="draw"></div>
+                <div class="sub-container" id="guest-container">
+                    <h2>GUEST</h2>
+                    <div class="counter">
+                        <p id="guest-counter"></p>
+                    </div>
+                    <div class="btn-container">
+                        <button class="btn" onclick="add1Guest()">+1</button>
+                        <button class="btn" onclick="add2Guest()">+2</button>
+                        <button class="btn" onclick="add3Guest()">+3</button>
+                    </div>
+                    <p id="answer1" style="font-size: 18px;"></p>
+                </div>
+            </div>
+            <div>
+                <button onclick="newGame()" class="btn-large">New Game</button>
+                <button onclick="endGame()" class="btn-large">End Game</button>
+            </div>
+        </main>
+        
+        <script src="index.js" async defer></script>
+    </body>
+</html>
